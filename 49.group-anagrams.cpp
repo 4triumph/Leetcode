@@ -35,8 +35,8 @@ public:
         unordered_map<string, vector<string>> mp;
         for(auto &i : strs){
             string t = i;
-            //sort(t.begin(), t.end());
-            ranges::sort(t);
+            sort(t.begin(), t.end());
+            //ranges::sort(t);
             mp[t].push_back(i);
         }
         vector<vector<string>> ans;
